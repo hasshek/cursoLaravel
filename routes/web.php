@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Es la miswma llamada a la vista pero mas simple
+//Route::view('/', 'welcome');
+
+
+Route::get('permiso', 'permisoController@index');
+
